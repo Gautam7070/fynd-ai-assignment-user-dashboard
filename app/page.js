@@ -20,7 +20,7 @@ export default function UserDashboard() {
     setResponse("");
 
     try {
-      const backendUrl = `http://${window.location.hostname}:8001/submit-review`;
+      const backendUrl = `https://fynd-ai-assignment-0y2z.onrender.com/submit-review`;
       const res = await fetch(backendUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
